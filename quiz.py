@@ -1,9 +1,9 @@
 import json
-
 class Question:
-    def __init__(self, pergunta, opcoes):
+    def __init__(self, pergunta, opcoes, resposta):
         self.pergunta = pergunta
         self.opcoes = opcoes
+        self.resposta = resposta
 
     def __repr__(self):
         return f"<Question> pergunta: {self.pergunta} - opcoes: {self.opcoes}"

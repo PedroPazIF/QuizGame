@@ -3,55 +3,82 @@
   {
     "id":1,
     "pergunta": "Qual desses jogos é desenvolvido pela Rockstar Games?",
-    "opcoes": ["The Witcher 3", "Grand Theft Auto V", "Dark Souls"],
+    "opcoes": ["The Witcher 3", "Grand Theft Auto V", "Minecraft"],
     "resposta": 2,
-    "tema": "mundo aberto",
+    "tema": "Mundo aberto",
     "dificuldade": 1
   },
   {
     "id":2,
     "pergunta": "Em que jogo o protagonista se chama 'Link' e precisa resgatar a Princesa Zelda?",
-    "opcoes": ["Final Fantasy VII", "The Legend of Zelda: Breath of the Wild", "Minecraft"]
+    "opcoes": ["Final Fantasy VII", "The Legend of Zelda: Breath of the Wild", "Dark Souls"],
+    "resposta": 2,
+    "tema": "Aventura/RPG",
+    "dificuldade": 1
   },
   {
     "id":3,
     "pergunta": "Qual destes jogos é um battle royale desenvolvido pela Epic Games?",
-    "opcoes": ["Call of Duty: Warzone", "Fortnite", "Apex Legends"]
+    "opcoes": ["Call of Duty: Warzone", "Apex Legends", "Fortnite"],
+    "resposta": 3,
+    "tema": "Battle Royale",
+    "dificuldade": 2
   },
   {
     "id":4,
     "pergunta": "Qual é o nome do cientista brilhante e protagonista da série de jogos 'Half-Life'?",
-    "opcoes": ["Gordon Freeman", "John Carmack", "Marcus Fenix"]
+    "opcoes": ["Gordon Freeman", "John Carmack", "Marcus Fenix"],
+    "resposta": 1,
+    "tema": "First Person Shooter",
+    "dificuldade": 5
   },
   {
     "id":5,
     "pergunta": "Em que jogo você pode construir e explorar um mundo feito de blocos?",
-    "opcoes": ["Terraria", "Roblox", "Minecraft"]
+    "opcoes": ["Terraria", "Roblox", "Minecraft"],
+    "resposta": 3,
+    "tema": "Mundo aberto",
+    "dificuldade": 1
   },
   {
     "id":6,
     "pergunta": "Qual é o nome do jogo em que você controla o Doom Slayer, lutando contra demônios do inferno?",
-    "opcoes": ["Dark Souls", "Doom (2016)", "Borderlands 2"]
+    "opcoes": ["Dark Souls", "Doom (2016)", "Borderlands 2"],
+    "resposta": 2,
+    "tema": "mundo aberto",
+    "dificuldade": 4
   },
   {
     "id":7,
     "pergunta": "Que jogo popular simula uma vida virtual e inclui aspectos de criação de personagens, construção de casas e interações sociais?",
-    "opcoes": ["Sims 4", "Animal Crossing: New Horizons", "Stardew Valley"]
+    "opcoes": ["The Sims 4", "Animal Crossing: New Horizons", "Stardew Valley"],
+    "resposta": 1,
+    "tema": "Simulador de vida",
+    "dificuldade": 1
   },
   {
     "id":8,
     "pergunta": "Qual destes jogos é um jogo free to play da riot games?",
-    "opcoes": ["Valorant", "EVE Online", "Rainbow Six Siege"]
+    "opcoes": ["Valorant", "EVE Online", "Rainbow Six Siege"],
+    "resposta": 1,
+    "tema": "First Person Shooter",
+    "dificuldade": 2
   },
   {
     "id":9,
     "pergunta": "Qual é o nome do jogo em que você pode jogar futebol com carros personalizáveis em partidas frenéticas?",
-    "opcoes": ["Rocket League", "FIFA 22", "NBA 2K22"]
+    "opcoes": ["Rocket League", "FIFA 22", "NBA 2K22"],
+    "resposta": 1,
+    "tema": "Jogo eletronico de esporte",
+    "dificuldade": 1
   },
   {
     "id":10,
     "pergunta": "Em que jogo você pode criar sua própria especie e dominar a galaxia?",
-    "opcoes": ["Monster Hunter: World", "Spore", "The sims 3"]
+    "opcoes": ["Monster Hunter: World", "Spore", "The sims 3"],
+    "resposta": 2,
+    "tema": "Sci-fi",
+    "dificuldade": 2
   }
 ]
 }
