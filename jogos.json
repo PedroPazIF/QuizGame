@@ -1,0 +1,57 @@
+{"jogos":
+[
+  {
+    "id":1,
+    "pergunta": "Qual desses jogos é desenvolvido pela Rockstar Games?",
+    "opcoes": ["The Witcher 3", "Grand Theft Auto V", "Dark Souls"],
+    "resposta": 2,
+    "tema": "mundo aberto",
+    "dificuldade": 1
+  },
+  {
+    "id":2,
+    "pergunta": "Em que jogo o protagonista se chama 'Link' e precisa resgatar a Princesa Zelda?",
+    "opcoes": ["Final Fantasy VII", "The Legend of Zelda: Breath of the Wild", "Minecraft"]
+  },
+  {
+    "id":3,
+    "pergunta": "Qual destes jogos é um battle royale desenvolvido pela Epic Games?",
+    "opcoes": ["Call of Duty: Warzone", "Fortnite", "Apex Legends"]
+  },
+  {
+    "id":4,
+    "pergunta": "Qual é o nome do cientista brilhante e protagonista da série de jogos 'Half-Life'?",
+    "opcoes": ["Gordon Freeman", "John Carmack", "Marcus Fenix"]
+  },
+  {
+    "id":5,
+    "pergunta": "Em que jogo você pode construir e explorar um mundo feito de blocos?",
+    "opcoes": ["Terraria", "Roblox", "Minecraft"]
+  },
+  {
+    "id":6,
+    "pergunta": "Qual é o nome do jogo em que você controla o Doom Slayer, lutando contra demônios do inferno?",
+    "opcoes": ["Dark Souls", "Doom (2016)", "Borderlands 2"]
+  },
+  {
+    "id":7,
+    "pergunta": "Que jogo popular simula uma vida virtual e inclui aspectos de criação de personagens, construção de casas e interações sociais?",
+    "opcoes": ["Sims 4", "Animal Crossing: New Horizons", "Stardew Valley"]
+  },
+  {
+    "id":8,
+    "pergunta": "Qual destes jogos é um jogo free to play da riot games?",
+    "opcoes": ["Valorant", "EVE Online", "Rainbow Six Siege"]
+  },
+  {
+    "id":9,
+    "pergunta": "Qual é o nome do jogo em que você pode jogar futebol com carros personalizáveis em partidas frenéticas?",
+    "opcoes": ["Rocket League", "FIFA 22", "NBA 2K22"]
+  },
+  {
+    "id":10,
+    "pergunta": "Em que jogo você pode criar sua própria especie e dominar a galaxia?",
+    "opcoes": ["Monster Hunter: World", "Spore", "The sims 3"]
+  }
+]
+}
