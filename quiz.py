@@ -37,9 +37,9 @@ class Quiz:
             self.current_question_index += 1
             self.notify_observers()
 
-    def calculate_score(self, user_answers):
-        self.score = sum([1 for i in range(len(user_answers)) if user_answers[i] == self.questions[i].resposta])
-        print(f"Sua pontuação final: {self.score}/{len(self.questions)}")
+    # def calculate_score(self, user_answers):
+    #     self.score = sum([1 for i in range(len(user_answers)) if user_answers[i] == self.questions[i].resposta])
+    #     print(f"Sua pontuação final: {self.score}/{len(self.questions)}")
 
 class ScoreObserver:
     def __init__(self):
