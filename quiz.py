@@ -15,9 +15,7 @@ class Quiz:
         self.score = 0
         self.observers = []
 
-#strategy
 #observer
-
     def add_observer(self, observer):
         self.observers.append(observer)
 
@@ -37,10 +35,6 @@ class Quiz:
             self.current_question_index += 1
             self.notify_observers()
 
-    # def calculate_score(self, user_answers):
-    #     self.score = sum([1 for i in range(len(user_answers)) if user_answers[i] == self.questions[i].resposta])
-    #     print(f"Sua pontuação final: {self.score}/{len(self.questions)}")
-
 class ScoreObserver:
     def __init__(self):
         self.score = 0
@@ -51,12 +45,27 @@ class ScoreObserver:
         print(f"|PONTUAÇÃO: {self.score}|")
         print(f"--------------\n")
 
-if __name__ == "__main__":
-    with open('jogos.json', 'r') as f:
-        data = json.load(f)
+# Facade 
+class QuizFacade:
+    def __init__(self):
+        self.quiz = None
+        self.score_observer = None
 
-    questions = [Question(q['pergunta'], q['opcoes'], int(q['resposta']), q['tema']) for q in data['jogos']]
-    quiz = Quiz(questions)
-    score_observer = ScoreObserver()
-    quiz.add_observer(score_observer)
-    quiz.start()
+    def load_questions_from_json(self, file_path):
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+        questions = [Question(q['pergunta'], q['opcoes'], int(q['resposta']), q['tema']) for q in data['jogos']]
+        self.quiz = Quiz(questions)
+        self.score_observer = ScoreObserver()
+        self.quiz.add_observer(self.score_observer)
+
+    def start_quiz(self):
+        if self.quiz:
+            self.quiz.start()
+        else:
+            print("Por favor, carregue as perguntas antes de iniciar o quiz.")
+
+if __name__ == "__main__":
+    facade = QuizFacade()
+    facade.load_questions_from_json('jogos.json')
+    facade.start_quiz()
