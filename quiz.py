@@ -31,10 +31,14 @@ class Quiz:
     def start(self):
         while self.current_question_index < len(self.questions):
             question = self.questions[self.current_question_index]
-            print(f"Pergunta: {question.question}")
+            print(f"\n--------------------------------------------------------------------")
+            print(f" Pergunta: {question.question} \n Tema: {question.theme}")
+            print(f"--------------------------------------------------------------------\n")
+
             for i, option in enumerate(question.options):
                 print(f"{i + 1}. {option}")
-            user_answer = int(input("Escolha sua resposta: "))
+                
+            user_answer = int(input("\nEscolha sua resposta: "))
             if user_answer == question.correct_answer:
                 self.score += 1
             self.current_question_index += 1
