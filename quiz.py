@@ -1,12 +1,17 @@
 import json
 
-#factory
 class Question:
     def __init__(self, question, options, correct_answer, theme):
         self.question = question
         self.options = options
         self.correct_answer = correct_answer
         self.theme = theme
+
+#factory 
+class factoryQuestion:
+    def createQuestion(data):
+        question = [Question(q['pergunta'], q['opcoes'], int(q['resposta']), q['tema']) for q in data['jogos']]
+        return question
     
 class Quiz:
     def __init__(self, questions):
@@ -54,7 +59,7 @@ class QuizFacade:
     def load_questions_from_json(self, file_path):
         with open(file_path, 'r') as f:
             data = json.load(f)
-        questions = [Question(q['pergunta'], q['opcoes'], int(q['resposta']), q['tema']) for q in data['jogos']]
+        questions = factoryQuestion.createQuestion(data)
         self.quiz = Quiz(questions)
         self.score_observer = ScoreObserver()
         self.quiz.add_observer(self.score_observer)
