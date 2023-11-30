@@ -5,6 +5,6 @@ app = FastAPI()
 
 @app.get("/perguntas")
 def loadQuestion():
-    data = "/home/lab/Documentos/Pedro/QuizGame/jogos.json"
+    data = "jogos.json"
     perguntas = QuizFacade.load_questions_from_json(QuizFacade, data)
     return perguntas
