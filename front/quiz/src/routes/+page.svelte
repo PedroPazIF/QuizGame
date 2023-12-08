@@ -2,11 +2,16 @@
     import { onMount } from 'svelte';
     let perguntas = [];
     
-    onMount(async () => {
-        const res = await fetch('http://127.0.0.1:8000/perguntas');
-        const result = await res.json();
-        perguntas = result.jogos; 
+    async function getPerguntas() {
+    const res = await fetch('http://127.0.0.1:8000/perguntas',{
+        method: 'GET'
     });
+    onMount(getPerguntas()
+    );
+    const json = await res.json();
+    perguntas = json;
+}
+console.log(perguntas);
 </script>
 
     {#each perguntas as pergunta (pergunta.id)}
