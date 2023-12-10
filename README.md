@@ -35,6 +35,8 @@ Certifique-se de ter o seguinte instalado no seu sistema:
 - Certifique-se de rodar o backend antes do frontend para evitar problemas de conexão.
 
 Projeto semestral para disciplina: Padrões de Projeto e Frameworks
+
 Professor: Felippe Scheidt
 
-Desenvolvido por Pedro Paz
+
+Desenvolvido por: Pedro Paz
