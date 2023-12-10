@@ -46,10 +46,11 @@
                   message = `Hora de treinar, novato! Sua pontuação de ${userScore} pontos indica que você está apenas começando sua jornada. Estude as estratégias, aprimore suas habilidades e, na próxima vez, a vitória será sua!`;
               }
 
-              Swal.fire({
-                  title: 'Resultado do Quiz',
-                  text: message,
-                  icon: 'info',
+            Swal.fire({
+                title: 'Resultado do Quiz',
+                text: message,
+                background: '#220A29',
+                color:'#fff',
               }).then((result) => {
                   if (result.isConfirmed) {
                       resetGame();
@@ -61,6 +62,7 @@
       }
   }
 
+  
   function clearSelection() {
       userAnswer = null;
       animationState = '';
@@ -102,8 +104,10 @@
             {/each}
             <p>Pontuação Atual: {userScore}</p>
             <p>Perguntas Restantes: {questions.length - currentQuestionIndex - 1}</p>
-            <button on:click={submitAnswer}>Enviar Resposta</button>
-            <button on:click={clearSelection}>Limpar Seleção</button>
+            <button class="top-button" on:click={submitAnswer}>Enviar Resposta</button>
+            <button class="bottom-button" on:click={clearSelection}>Limpar Seleção</button>
+            <button class="bottom-button" on:click={resetGame}>Reiniciar o jogo</button>
+
         </div>
         {/if}
         {#if currentQuestionIndex >= questions.length}
