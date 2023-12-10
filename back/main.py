@@ -16,7 +16,7 @@ app.add_middleware(
 quiz_facade = QuizFacade() 
 
 @app.get("/perguntas")
-def loadQuestion():
+def loadQuestion(total: int):
     data = "jogos.json"
-    perguntas = quiz_facade.load_questions_from_json(data)  # Chamar o método na instância
+    perguntas = quiz_facade.load_questions_from_json(data, total)  # Chamar o método na instância
     return perguntas

@@ -1,84 +1,364 @@
-{"jogos":
-[
-  {
-    "id":1,
-    "pergunta": "Qual desses jogos é desenvolvido pela Rockstar Games?",
-    "opcoes": ["The Witcher 3", "Grand Theft Auto V", "Minecraft"],
-    "resposta": "2",
-    "tema": "Mundo aberto",
-    "dificuldade": 1
-  },
-  {
-    "id":2,
-    "pergunta": "Em que jogo o protagonista se chama 'Link' e precisa resgatar a Princesa Zelda?",
-    "opcoes": ["Final Fantasy VII", "The Legend of Zelda: Breath of the Wild", "Dark Souls"],
-    "resposta": "2",
-    "tema": "Aventura/RPG",
-    "dificuldade": 1
-  },
-  {
-    "id":3,
-    "pergunta": "Qual destes jogos é um battle royale desenvolvido pela Epic Games?",
-    "opcoes": ["Call of Duty: Warzone", "Apex Legends", "Fortnite"],
-    "resposta": "3",
-    "tema": "Battle Royale",
-    "dificuldade": 2
-  },
-  {
-    "id":4,
-    "pergunta": "Qual é o nome do cientista brilhante e protagonista da série de jogos 'Half-Life'?",
-    "opcoes": ["Gordon Freeman", "John Carmack", "Marcus Fenix"],
-    "resposta": "1",
-    "tema": "First Person Shooter",
-    "dificuldade": 5
-  },
-  {
-    "id":5,
-    "pergunta": "Em que jogo você pode construir e explorar um mundo feito de blocos?",
-    "opcoes": ["Terraria", "Roblox", "Minecraft"],
-    "resposta": "3",
-    "tema": "Mundo aberto",
-    "dificuldade": 1
-  },
-  {
-    "id":6,
-    "pergunta": "Qual é o nome do jogo em que você controla o Doom Slayer, lutando contra demônios do inferno?",
-    "opcoes": ["Dark Souls", "Doom (2016)", "Borderlands 2"],
-    "resposta": "2",
-    "tema": "mundo aberto",
-    "dificuldade": 4
-  },
-  {
-    "id":7,
-    "pergunta": "Que jogo popular simula uma vida virtual e inclui aspectos de criação de personagens, construção de casas e interações sociais?",
-    "opcoes": ["The Sims 4", "Animal Crossing: New Horizons", "Stardew Valley"],
-    "resposta": "1",
-    "tema": "Simulador de vida",
-    "dificuldade": 1
-  },
-  {
-    "id":8,
-    "pergunta": "Qual destes jogos é um jogo free to play da riot games?",
-    "opcoes": ["Valorant", "EVE Online", "Rainbow Six Siege"],
-    "resposta": "1",
-    "tema": "First Person Shooter",
-    "dificuldade": 2
-  },
-  {
-    "id":9,
-    "pergunta": "Qual é o nome do jogo em que você pode jogar futebol com carros personalizáveis em partidas frenéticas?",
-    "opcoes": ["Rocket League", "FIFA 22", "NBA 2K22"],
-    "resposta": "1",
-    "tema": "Jogo eletronico de esporte",
-    "dificuldade": 1
-  },
-  {
-    "id":10,
-    "pergunta": "Em que jogo você pode criar sua própria especie e dominar a galaxia?",
-    "opcoes": ["Monster Hunter: World", "Spore", "The sims 3"],
-    "resposta": "2",
-    "tema": "Sci-fi",
-    "dificuldade": 2
-  }
-]
+{
+  "jogos": [
+    {
+      "id": 1,
+      "pergunta": "Qual desses jogos é desenvolvido pela Rockstar Games?",
+      "opcoes": [
+        "The Witcher 3",
+        "Grand Theft Auto V",
+        "Minecraft"
+      ],
+      "resposta": "2",
+      "tema": "Mundo aberto",
+      "dificuldade": 1
+    },
+    {
+      "id": 2,
+      "pergunta": "Em que jogo o protagonista se chama 'Link' e precisa resgatar a Princesa Zelda?",
+      "opcoes": [
+        "Final Fantasy VII",
+        "The Legend of Zelda: Breath of the Wild",
+        "Dark Souls"
+      ],
+      "resposta": "2",
+      "tema": "Aventura/RPG",
+      "dificuldade": 1
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual destes jogos é um battle royale desenvolvido pela Epic Games?",
+      "opcoes": [
+        "Call of Duty: Warzone",
+        "Apex Legends",
+        "Fortnite"
+      ],
+      "resposta": "3",
+      "tema": "Battle Royale",
+      "dificuldade": 2
+    },
+    {
+      "id": 4,
+      "pergunta": "Qual é o nome do cientista brilhante e protagonista da série de jogos 'Half-Life'?",
+      "opcoes": [
+        "Gordon Freeman",
+        "John Carmack",
+        "Marcus Fenix"
+      ],
+      "resposta": "1",
+      "tema": "First Person Shooter",
+      "dificuldade": 5
+    },
+    {
+      "id": 5,
+      "pergunta": "Em que jogo você pode construir e explorar um mundo feito de blocos?",
+      "opcoes": [
+        "Terraria",
+        "Roblox",
+        "Minecraft"
+      ],
+      "resposta": "3",
+      "tema": "Mundo aberto",
+      "dificuldade": 1
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual é o nome do jogo em que você controla o Doom Slayer, lutando contra demônios do inferno?",
+      "opcoes": [
+        "Dark Souls",
+        "Doom (2016)",
+        "Borderlands 2"
+      ],
+      "resposta": "2",
+      "tema": "mundo aberto",
+      "dificuldade": 4
+    },
+    {
+      "id": 7,
+      "pergunta": "Que jogo popular simula uma vida virtual e inclui aspectos de criação de personagens, construção de casas e interações sociais?",
+      "opcoes": [
+        "The Sims 4",
+        "Animal Crossing: New Horizons",
+        "Stardew Valley"
+      ],
+      "resposta": "1",
+      "tema": "Simulador de vida",
+      "dificuldade": 1
+    },
+    {
+      "id": 8,
+      "pergunta": "Qual destes jogos é um jogo free to play da riot games?",
+      "opcoes": [
+        "Valorant",
+        "EVE Online",
+        "Rainbow Six Siege"
+      ],
+      "resposta": "1",
+      "tema": "First Person Shooter",
+      "dificuldade": 2
+    },
+    {
+      "id": 9,
+      "pergunta": "Qual é o nome do jogo em que você pode jogar futebol com carros personalizáveis em partidas frenéticas?",
+      "opcoes": [
+        "Rocket League",
+        "FIFA 22",
+        "NBA 2K22"
+      ],
+      "resposta": "1",
+      "tema": "Jogo eletronico de esporte",
+      "dificuldade": 1
+    },
+    {
+      "id": 10,
+      "pergunta": "Em que jogo você pode criar sua própria especie e dominar a galaxia?",
+      "opcoes": [
+        "Monster Hunter: World",
+        "Spore",
+        "The sims 3"
+      ],
+      "resposta": "2",
+      "tema": "Sci-fi",
+      "dificuldade": 2
+    },
+    {
+      "id": 11,
+      "pergunta": "Qual jogo de estratégia em tempo real se passa na era medieval e é conhecido por suas batalhas épicas?",
+      "opcoes": [
+        "Age of Empires II",
+        "StarCraft II",
+        "Civilization VI"
+      ],
+      "resposta": "1",
+      "tema": "Estratégia",
+      "dificuldade": 2
+    },
+    {
+      "id": 12,
+      "pergunta": "Em que jogo de aventura épica, baseado na mitologia nórdica, você controla Kratos em sua jornada para espalhar as cinzas de sua esposa?",
+      "opcoes": [
+        "God of War (2018)",
+        "The Legend of Zelda: Breath of the Wild",
+        "Dark Souls III"
+      ],
+      "resposta": "1",
+      "tema": "Aventura",
+      "dificuldade": 3
+    },
+    {
+      "id": 13,
+      "pergunta": "Qual é o nome do jogo de survival horror em que os jogadores enfrentam criaturas zumbis em uma cidade infestada?",
+      "opcoes": [
+        "Resident Evil 7: Biohazard",
+        "Silent Hill 2",
+        "Dead Space"
+      ],
+      "resposta": "1",
+      "tema": "Horror",
+      "dificuldade": 2
+    },
+    {
+      "id": 14,
+      "pergunta": "Em qual jogo de mundo aberto os jogadores exploram a fictícia cidade de Los Santos, realizam assaltos e interagem com três protagonistas distintos?",
+      "opcoes": [
+        "Grand Theft Auto V",
+        "Red Dead Redemption 2",
+        "Watch Dogs 2"
+      ],
+      "resposta": "1",
+      "tema": "Mundo Aberto",
+      "dificuldade": 2
+    },
+    {
+      "id": 15,
+      "pergunta": "Qual RPG japonês é conhecido por suas histórias emocionantes, personagens cativantes e seu sistema de combate por turnos?",
+      "opcoes": [
+        "Final Fantasy VII",
+        "The Witcher 3: Wild Hunt",
+        "Persona 5"
+      ],
+      "resposta": "3",
+      "tema": "RPG",
+      "dificuldade": 3
+    },
+    {
+      "id": 16,
+      "pergunta": "Qual jogo indie de plataforma 2D, conhecido por sua atmosfera encantadora e desafiadora, foi lançado em 2010?",
+      "opcoes": [
+        "Limbo",
+        "Hollow Knight",
+        "Ori and the Blind Forest"
+      ],
+      "resposta": "1",
+      "tema": "Indie",
+      "dificuldade": 2
+    },
+    {
+      "id": 17,
+      "pergunta": "Em qual jogo de esportes eletrônicos os jogadores controlam um time de futebol virtual e competem em torneios online?",
+      "opcoes": [
+        "FIFA 22",
+        "Rocket League",
+        "NBA 2K22"
+      ],
+      "resposta": "1",
+      "tema": "Esportes Eletrônicos",
+      "dificuldade": 2
+    },
+    {
+      "id": 18,
+      "pergunta": "Qual é o nome do jogo de estratégia por turnos que se passa no mundo de fantasia de Azeroth?",
+      "opcoes": [
+        "Total War: Three Kingdoms",
+        "Hearthstone",
+        "Heroes of Might and Magic III"
+      ],
+      "resposta": "2",
+      "tema": "Estratégia por Turnos",
+      "dificuldade": 3
+    },
+    {
+      "id": 19,
+      "pergunta": "Em qual MMORPG os jogadores podem explorar o vasto mundo de Tyria, enfrentar dragões e participar de eventos dinâmicos?",
+      "opcoes": [
+        "World of Warcraft",
+        "Guild Wars 2",
+        "The Elder Scrolls Online"
+      ],
+      "resposta": "2",
+      "tema": "MMORPG",
+      "dificuldade": 3
+    },
+    {
+      "id": 20,
+      "pergunta": "Qual é o nome do jogo de ação e aventura em que os jogadores controlam um arqueólogo intrépido em busca de tesouros antigos?",
+      "opcoes": [
+        "Tomb Raider (2013)",
+        "Uncharted 4: A Thief's End",
+        "Assassin's Creed Odyssey"
+      ],
+      "resposta": "1",
+      "tema": "Ação e Aventura",
+      "dificuldade": 2
+    },
+    {
+      "id": 21,
+      "pergunta": "Qual jogo popular de tiro em primeira pessoa (FPS) se passa durante a Segunda Guerra Mundial e é conhecido por seu realismo?",
+      "opcoes": [
+        "Call of Duty: Modern Warfare",
+        "Battlefield V",
+        "Medal of Honor: Allied Assault"
+      ],
+      "resposta": "2",
+      "tema": "FPS",
+      "dificuldade": 3
+    },
+    {
+      "id": 22,
+      "pergunta": "Em que jogo os jogadores podem explorar uma vasta galáxia, comerciar com alienígenas e até mesmo lutar em batalhas espaciais?",
+      "opcoes": [
+        "No Man's Sky",
+        "Elite Dangerous",
+        "Stellaris"
+      ],
+      "resposta": "1",
+      "tema": "Exploração Espacial",
+      "dificuldade": 3
+    },
+    {
+      "id": 23,
+      "pergunta": "Qual é o nome do jogo de ação e aventura em que os jogadores controlam um caçador de monstros chamado Geralt de Rívia?",
+      "opcoes": [
+        "Assassin's Creed Odyssey",
+        "The Witcher 3: Wild Hunt",
+        "Dragon Age: Inquisition"
+      ],
+      "resposta": "2",
+      "tema": "Ação e Aventura",
+      "dificuldade": 2
+    },
+    {
+      "id": 24,
+      "pergunta": "Em que jogo os jogadores podem construir e gerenciar seu próprio parque de dinossauros?",
+      "opcoes": [
+        "Zoo Tycoon",
+        "Jurassic World Evolution",
+        "SimCity"
+      ],
+      "resposta": "2",
+      "tema": "Simulação",
+      "dificuldade": 2
+    },
+    {
+      "id": 25,
+      "pergunta": "Qual é o nome do jogo de estratégia em que os jogadores constroem e gerenciam uma civilização desde os tempos antigos até a era espacial?",
+      "opcoes": [
+        "Age of Empires IV",
+        "Civilization VI",
+        "Anno 1800"
+      ],
+      "resposta": "2",
+      "tema": "Estratégia",
+      "dificuldade": 3
+    },
+    {
+      "id": 26,
+      "pergunta": "Em que jogo de RPG os jogadores exploram um mundo vasto, enfrentam dragões e tomam decisões que afetam o enredo?",
+      "opcoes": [
+        "Divinity: Original Sin 2",
+        "Dragon Age: Inquisition",
+        "The Elder Scrolls V: Skyrim"
+      ],
+      "resposta": "3",
+      "tema": "RPG",
+      "dificuldade": 3
+    },
+    {
+      "id": 27,
+      "pergunta": "Qual é o nome do jogo em que os jogadores podem criar e gerenciar seu próprio parque de diversões?",
+      "opcoes": [
+        "RollerCoaster Tycoon",
+        "Planet Coaster",
+        "Theme Park"
+      ],
+      "resposta": "1",
+      "tema": "Simulação",
+      "dificuldade": 1
+    },
+    {
+      "id": 28,
+      "pergunta": "Em que jogo de terror os jogadores enfrentam criaturas alienígenas em uma estação espacial abandonada?",
+      "opcoes": [
+        "Dead Space",
+        "Alien: Isolation",
+        "Prey"
+      ],
+      "resposta": "2",
+      "tema": "Horror",
+      "dificuldade": 4
+    },
+    {
+      "id": 29,
+      "pergunta": "Qual é o nome do jogo de estratégia em tempo real que se passa no universo de ficção científica e é conhecido por suas facções únicas?",
+      "opcoes": [
+        "StarCraft II",
+        "Endless Space 2",
+        "Command & Conquer: Red Alert"
+      ],
+      "resposta": "1",
+      "tema": "Estratégia",
+      "dificuldade": 4
+    },
+    {
+      "id": 30,
+      "pergunta": "Em que jogo de ação e aventura os jogadores controlam um caçador de monstros chamado Aloy, explorando um mundo pós-apocalíptico dominado por máquinas?",
+      "opcoes": [
+        "Horizon Zero Dawn",
+        "The Last of Us Part II",
+        "Assassin's Creed Valhalla"
+      ],
+      "resposta": "1",
+      "tema": "Ação e Aventura",
+      "dificuldade": 3
+    }
+  ]
 }

@@ -9,11 +9,20 @@
   let userAnswer = null;
   let userScore = 0;
   let animationState = '';
+  export let totalperg;
+  
 
-  onMount(async () => {
-      const data = await getQuestions();
-      questions = data;
+  onMount(() => {
+    if (questions.length === 0) {
+      loadQuestions();
+    }
   });
+
+  async function loadQuestions() {
+    const data = await getQuestions(totalperg);
+    questions = data;
+    questions = [...data];
+  }
 
   function selectAnswer(answer) {
       userAnswer = answer;
@@ -28,7 +37,7 @@
           if (animationState === 'correct') {
               userScore += 1;
           }
-
+          
           userAnswer = null;
 
           if (currentQuestionIndex < questions.length - 1) {
@@ -73,6 +82,9 @@
       userScore = 0;
       userAnswer = null;
       animationState = '';
+      totalperg = 0;
+      window.location.href = "/"
+      
   }
 </script>
 

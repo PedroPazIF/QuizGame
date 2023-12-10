@@ -1,4 +1,5 @@
 import json
+import random
 
 class Question:
     def __init__(self, question, options, correct_answer, theme):
@@ -55,18 +56,22 @@ class ScoreObserver:
         print(f"--------------\n")
 
 class QuizFacade:
-    def __init__(self):
+    def __init__(self, total=0):
         self.quiz = None
         self.score_observer = None
+        self.total = total
 
-    def load_questions_from_json(self, file_path):
+    def load_questions_from_json(self, file_path, total):
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             questions = factoryQuestion.createQuestion(data)
-            self.quiz = Quiz(questions)
+            print(questions)
+            total_int = int(total)
+            selecao = random.sample(questions, min(total_int, len(questions)))
+            self.quiz = Quiz(selecao)
             self.score_observer = ScoreObserver()
             self.quiz.add_observer(self.score_observer)
-            return questions 
+            return selecao 
             
     def start_quiz(self):
         if self.quiz:
