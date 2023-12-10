@@ -39,17 +39,17 @@ input {
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #8904B1;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 7px 10px;
   font-size: 1em;
   cursor: pointer;
   margin-top: 15px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #2F0B3A;
 }
 @keyframes correctAnimation {
   0% {
