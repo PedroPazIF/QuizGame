@@ -27,6 +27,7 @@ Certifique-se de ter o seguinte instalado no seu sistema:
 1. Navegue até o diretório do frontend: `cd front`
 2. Navegue até o diretório quiz: `cd quiz`
 3. Instale as dependências: `npm install`
+4. Extensão `Svelte for VS code`(opcional)
 
 ### Execução
 3. Rode o aplicativo SvelteKit: `npm run dev`
