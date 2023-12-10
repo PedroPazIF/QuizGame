@@ -34,6 +34,7 @@ Certifique-se de ter o seguinte instalado no seu sistema:
 ## Observações
 - Certifique-se de rodar o backend antes do frontend para evitar problemas de conexão.
 
-**Matéria: Padrões de Projeto e Frameworks **
-**Professor: Felippe Scheidt **
-**Desenvolvido por [Pedro Paz] **
+Projeto semestral para disciplina: Padrões de Projeto e Frameworks
+Professor: Felippe Scheidt
+
+Desenvolvido por Pedro Paz
