@@ -1,12 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from quiz import QuizFacade
-from fastapi.middleware.cors import (
-    CORSMiddleware
-)
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,8 +13,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+quiz_facade = QuizFacade() 
+
 @app.get("/perguntas")
 def loadQuestion():
     data = "jogos.json"
-    perguntas = QuizFacade.load_questions_from_json(QuizFacade, data)
+    perguntas = quiz_facade.load_questions_from_json(data)  # Chamar o método na instância
     return perguntas

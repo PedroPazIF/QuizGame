@@ -39,11 +39,11 @@
 
               let message = "";
               if (userScore > 7) {
-                  message = `Parabéns! Você foi muito bem! Sua pontuação total foi de ${userScore} pontos.`;
+                  message = `Parabéns, mestre dos controles! Sua pontuação estrondosa de ${userScore} pontos revela que você domina os jogos com maestria. Você é um verdadeiro herói virtual!`;
               } else if (userScore >= 5) {
-                  message = `Você está na média mas pode melhorar! Sua pontuação total foi de ${userScore} pontos.`;
+                  message = `Você está na média, jovem padawan gamer! Com ${userScore} pontos, você demonstrou habilidades respeitáveis. Continue a jornada, pois o caminho para a grandeza gamer está à sua frente.`;
               } else {
-                  message = `Você foi mal. Se esforce mais na próxima vez! Sua pontuação total foi de ${userScore} pontos.`;
+                  message = `Hora de treinar, novato! Sua pontuação de ${userScore} pontos indica que você está apenas começando sua jornada. Estude as estratégias, aprimore suas habilidades e, na próxima vez, a vitória será sua!`;
               }
 
               Swal.fire({

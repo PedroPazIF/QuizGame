@@ -60,14 +60,14 @@ class QuizFacade:
         self.score_observer = None
 
     def load_questions_from_json(self, file_path):
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             questions = factoryQuestion.createQuestion(data)
             self.quiz = Quiz(questions)
             self.score_observer = ScoreObserver()
             self.quiz.add_observer(self.score_observer)
             return questions 
-
+            
     def start_quiz(self):
         if self.quiz:
             self.quiz.start()

@@ -1,4 +1,3 @@
-<!-- src/routes/_layout.svelte -->
 <script>
     export let segment;
 </script>
