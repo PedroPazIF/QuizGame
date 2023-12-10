@@ -1,0 +1,90 @@
+/* quiz.css */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: url('https://e0.pxfuel.com/wallpapers/379/428/desktop-wallpaper-gaming-black-gaming.jpg');
+  background-size: cover;
+  color: #fff; 
+  font-weight: bolder;
+}
+body {
+  background: url('https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+h1 {
+  font-size: 40;
+  color: #fff;
+}
+
+div {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@keyframes correctAnimation {
+  0% {
+      transform: scale(1);
+      color: #fff; 
+  }
+  50% {
+      transform: scale(1.5) rotate(10deg);
+      color: #28a745;
+  }
+  100% {
+      transform: scale(1);
+      color: #fff;
+  }
+}
+
+@keyframes wrongAnimation {
+  0% {
+      transform: rotate(0deg);
+      color: #fff; 
+  }
+  50% {
+      transform: rotate(-10deg);
+      color: #dc3545; 
+  }
+  100% {
+      transform: rotate(0deg);
+      color: #fff; 
+  }
+}
+
+.correct-answer {
+  animation: correctAnimation 0.5s ease-out;
+}
+
+.wrong-answer {
+  animation: wrongAnimation 0.5s ease-out;
+}

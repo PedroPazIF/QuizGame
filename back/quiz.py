@@ -54,7 +54,6 @@ class ScoreObserver:
         print(f"|PONTUAÇÃO: {self.score}|")
         print(f"--------------\n")
 
-# Facade 
 class QuizFacade:
     def __init__(self):
         self.quiz = None
@@ -63,11 +62,11 @@ class QuizFacade:
     def load_questions_from_json(self, file_path):
         with open(file_path, 'r') as f:
             data = json.load(f)
-            return data
-        # questions = factoryQuestion.createQuestion(data)
-        # self.quiz = Quiz(questions)
-        # self.score_observer = ScoreObserver()
-        # self.quiz.add_observer(self.score_observer)
+            questions = factoryQuestion.createQuestion(data)
+            self.quiz = Quiz(questions)
+            self.score_observer = ScoreObserver()
+            self.quiz.add_observer(self.score_observer)
+            return questions 
 
     def start_quiz(self):
         if self.quiz:
