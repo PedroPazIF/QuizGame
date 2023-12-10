@@ -1,5 +1,6 @@
 <script>
   import Quiz from "./quiz.svelte";
+  import "./quiz.css";
 
   let value;
   export let totalperg = 0;
@@ -13,11 +14,13 @@
   }
 </script>
 
-<main>
+<main class="plus-page"> <!-- Adicionei a classe "plus-page" aqui -->
   {#if totalperg === 0}
-  <h2>Escolha a quantidade de questões (limitado a 10):</h2>
+  <h3>Teste seu conhecimento sobre jogos</h3>
+  <h3>Escolha a quantidade de questões</h3>
   <div>
     <input
+      class="inputInteface"
       type="number"
       min="1"
       max="10"
@@ -25,7 +28,7 @@
       bind:value
     />
   </div>
-  <button on:click={handleSubmit}>Começar</button>
+  <button class='btnInterface' on:click={handleSubmit}>Começar</button>
   {:else}
   <Quiz totalperg={parseInt(totalperg)} />
   {/if}

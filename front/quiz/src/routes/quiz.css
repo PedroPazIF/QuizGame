@@ -1,9 +1,11 @@
 /* quiz.css */
-
-main {
+main{
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
+  border: 5px;
+  border-style: solid;
+  border-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -12,12 +14,30 @@ main {
   color: #fff; 
   font-weight: bolder;
 }
+main.plus-page {
+  background: url('https://images.rawpixel.com/image_transparent_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNV9waG90b19vZl9hX2dpcmxfZ2FtZXJfcGxheWluZ19nYW1lX29uX2NvbXB1dGVyX180M2U5NWUzNC04NjFiLTQ4NjktYjkwNS1hM2QxOWI1ODRjNTJfMS5wbmc.png');
+  background-size: cover;
+  color: #fff; 
+  height: 350px;
+  width: 60%;
+  align-items: center;
+}
 body {
-  background: url('https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background: url('https://media1.giphy.com/media/3f63VcWeaGeaQ6AfKk/giphy.gif?cid=ecf05e47yi4m2bopd910srklh57b3mgu91g60vn3agf3089s&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+  background-size: 50%;
+
 }
 h1 {
-  font-size: 40;
+  font-size: 40px;
   color: #fff;
+}
+h3 {
+  font-size: 38px;
+  color: #fff;
+  font-weight: bolder;
+  text-shadow: 0px 0px 10px #000;
+  -webkit-text-stroke: 1px #000;
+  z-index: 1;
 }
 
 div {
@@ -36,6 +56,9 @@ label {
 
 input {
   margin-right: 5px;
+}
+.inputInteface {
+  width: 100px;
 }
 
 .top-button {
@@ -65,6 +88,23 @@ button {
 }
 
 button:hover {
+  background-color: #2F0B3A;
+}
+
+.btnInterface {
+  background-color: #8904B1;
+  color: #fff;
+  border: 3px;
+  border-style: solid;
+  border-color: #000;
+  padding: 7px 14px;
+  width: 150px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btnInterface:hover {
   background-color: #2F0B3A;
 }
 @keyframes correctAnimation {
